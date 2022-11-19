@@ -1,0 +1,387 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+
+
+local Window = Library.CreateLib("Anime Race Clicker by Nv", "DarkTheme")
+
+
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
+
+Section:NewToggle("autoTap", "", function(state)
+_G.autoTap = state
+
+if state then
+task.spawn(function()
+         while _G.autoTap == true do
+             game:GetService("ReplicatedStorage").Knit.Services.ClickerService.RF.PlayerClick:InvokeServer()
+            wait()
+        end
+    end)
+end
+end)
+
+
+local Section = Tab:NewSection("AutoHatch  (must be next to the star)")
+Section:NewToggle("Naruto1", "", function(state)
+_G.autoEgg = state
+task.spawn(function()
+    while wait() do
+        if not _G.autoEgg then break end;
+       
+         local args = {
+         [1] = "Star1",
+            [2] = 1,
+            [3] = {}}
+
+            game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+        end
+    end)
+end)
+
+Section:NewToggle("Naruto2", "", function(state)
+    _G.autoEgg = state
+    task.spawn(function()
+        while wait() do
+            if not _G.autoEgg then break end;
+           
+             local args = {
+             [1] = "Star2",
+                [2] = 1,
+                [3] = {}}
+    
+                game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+            end
+        end)
+    end)
+
+    Section:NewToggle("Dbz1", "", function(state)
+        _G.autoEgg = state
+        task.spawn(function()
+            while wait() do
+                if not _G.autoEgg then break end;
+               
+                 local args = {
+                 [1] = "Star3",
+                    [2] = 1,
+                    [3] = {}}
+        
+                    game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                end
+            end)
+        end)
+
+        Section:NewToggle("Dbz2", "", function(state)
+            _G.autoEgg = state
+            task.spawn(function()
+                while wait() do
+                    if not _G.autoEgg then break end;
+                   
+                     local args = {
+                     [1] = "Star4",
+                        [2] = 1,
+                        [3] = {}}
+            
+                        game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                    end
+                end)
+            end)
+
+ Section:NewToggle("OnePiece1", "", function(state)
+            _G.autoEgg = state
+            task.spawn(function()
+                while wait() do
+                    if not _G.autoEgg then break end;
+                   
+                     local args = {
+                     [1] = "Star5",
+                        [2] = 1,
+                        [3] = {}}
+            
+                        game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                    end
+                end)
+            end)
+
+            Section:NewToggle("OnePiece2", "", function(state)
+                _G.autoEgg = state
+                task.spawn(function()
+                    while wait() do
+                        if not _G.autoEgg then break end;
+                       
+                         local args = {
+                         [1] = "Star6",
+                            [2] = 1,
+                            [3] = {}}
+                
+                            game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                        end
+                    end)
+                end)
+
+                Section:NewToggle("Titan1", "", function(state)
+                    _G.autoEgg = state
+                    task.spawn(function()
+                        while wait() do
+                            if not _G.autoEgg then break end;
+                           
+                             local args = {
+                             [1] = "Star7",
+                                [2] = 1,
+                                [3] = {}}
+                    
+                                game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                            end
+                        end)
+                    end)
+    
+                    Section:NewToggle("Titan2", "", function(state)
+                        _G.autoEgg = state
+                        task.spawn(function()
+                            while wait() do
+                                if not _G.autoEgg then break end;
+                               
+                                 local args = {
+                                 [1] = "Star8",
+                                    [2] = 1,
+                                    [3] = {}}
+                        
+                                    game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                end
+                            end)
+                        end)
+        
+                        Section:NewToggle("Demon1", "", function(state)
+                            _G.autoEgg = state
+                            task.spawn(function()
+                                while wait() do
+                                    if not _G.autoEgg then break end;
+                                   
+                                     local args = {
+                                     [1] = "Star9",
+                                        [2] = 1,
+                                        [3] = {}}
+                            
+                                        game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                    end
+                                end)
+                            end)
+            
+                            Section:NewToggle("Demon2", "", function(state)
+                                _G.autoEgg = state
+                                task.spawn(function()
+                                    while wait() do
+                                        if not _G.autoEgg then break end;
+                                       
+                                         local args = {
+                                         [1] = "Star10",
+                                            [2] = 1,
+                                            [3] = {}}
+                                
+                                            game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                        end
+                                    end)
+                                end)
+
+                                Section:NewToggle("Jojo1", "", function(state)
+                                    _G.autoEgg = state
+                                    task.spawn(function()
+                                        while wait() do
+                                            if not _G.autoEgg then break end;
+                                           
+                                             local args = {
+                                             [1] = "Star11",
+                                                [2] = 1,
+                                                [3] = {}}
+                                    
+                                                game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                            end
+                                        end)
+                                    end)
+                    
+                                    Section:NewToggle("Jojo2", "", function(state)
+                                        _G.autoEgg = state
+                                        task.spawn(function()
+                                            while wait() do
+                                                if not _G.autoEgg then break end;
+                                               
+                                                 local args = {
+                                                 [1] = "Star12",
+                                                    [2] = 1,
+                                                    [3] = {}}
+                                        
+                                                    game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                end
+                                            end)
+                                        end)
+
+                                        Section:NewToggle("SAO1", "", function(state)
+                                            _G.autoEgg = state
+                                            task.spawn(function()
+                                                while wait() do
+                                                    if not _G.autoEgg then break end;
+                                                   
+                                                     local args = {
+                                                     [1] = "Star13",
+                                                        [2] = 1,
+                                                        [3] = {}}
+                                            
+                                                        game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                    end
+                                                end)
+                                            end)
+                            
+                                            Section:NewToggle("SAO2", "", function(state)
+                                                _G.autoEgg = state
+                                                task.spawn(function()
+                                                    while wait() do
+                                                        if not _G.autoEgg then break end;
+                                                       
+                                                         local args = {
+                                                         [1] = "Star14",
+                                                            [2] = 1,
+                                                            [3] = {}}
+                                                
+                                                            game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                        end
+                                                    end)
+                                                end)
+                                
+                                                Section:NewToggle("Hunter1", "", function(state)
+                                                    _G.autoEgg = state
+                                                    task.spawn(function()
+                                                        while wait() do
+                                                            if not _G.autoEgg then break end;
+                                                           
+                                                             local args = {
+                                                             [1] = "Star15",
+                                                                [2] = 1,
+                                                                [3] = {}}
+                                                    
+                                                                game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                            end
+                                                        end)
+                                                    end)
+                                    
+                                                    Section:NewToggle("Hunter2", "", function(state)
+                                                        _G.autoEgg = state
+                                                        task.spawn(function()
+                                                            while wait() do
+                                                                if not _G.autoEgg then break end;
+                                                               
+                                                                 local args = {
+                                                                 [1] = "Star16",
+                                                                    [2] = 1,
+                                                                    [3] = {}}
+                                                        
+                                                                    game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                                end
+                                                            end)
+                                                        end)
+                                        
+
+                                                        Section:NewToggle("Academia1", "", function(state)
+                                                            _G.autoEgg = state
+                                                            task.spawn(function()
+                                                                while wait() do
+                                                                    if not _G.autoEgg then break end;
+                                                                   
+                                                                     local args = {
+                                                                     [1] = "Star17",
+                                                                        [2] = 1,
+                                                                        [3] = {}}
+                                                            
+                                                                        game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                                    end
+                                                                end)
+                                                            end)
+                                            
+                                                            Section:NewToggle("Academia2", "", function(state)
+                                                                _G.autoEgg = state
+                                                                task.spawn(function()
+                                                                    while wait() do
+                                                                        if not _G.autoEgg then break end;
+                                                                       
+                                                                         local args = {
+                                                                         [1] = "Star18",
+                                                                            [2] = 1,
+                                                                            [3] = {}}
+                                                                
+                                                                            game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                                        end
+                                                                    end)
+                                                                end)
+
+                                                                Section:NewToggle("Hollow1", "", function(state)
+                                                                    _G.autoEgg = state
+                                                                    task.spawn(function()
+                                                                        while wait() do
+                                                                            if not _G.autoEgg then break end;
+                                                                           
+                                                                             local args = {
+                                                                             [1] = "Star19",
+                                                                                [2] = 1,
+                                                                                [3] = {}}
+                                                                    
+                                                                                game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                                            end
+                                                                        end)
+                                                                    end)
+                                                    
+                                                                    Section:NewToggle("Hollow2", "", function(state)
+                                                                        _G.autoEgg = state
+                                                                        task.spawn(function()
+                                                                            while wait() do
+                                                                                if not _G.autoEgg then break end;
+                                                                               
+                                                                                 local args = {
+                                                                                 [1] = "Star20",
+                                                                                    [2] = 1,
+                                                                                    [3] = {}}
+                                                                        
+                                                                                    game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                                                end
+                                                                            end)
+                                                                        end)
+                                                        
+                                                                        Section:NewToggle("YT1", "", function(state)
+                                                                            _G.autoEgg = state
+                                                                            task.spawn(function()
+                                                                                while wait() do
+                                                                                    if not _G.autoEgg then break end;
+                                                                                   
+                                                                                     local args = {
+                                                                                     [1] = "Star21",
+                                                                                        [2] = 1,
+                                                                                        [3] = {}}
+                                                                            
+                                                                                        game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                                                    end
+                                                                                end)
+                                                                            end)
+
+                                                                            Section:NewToggle("YT2", "", function(state)
+                                                                                _G.autoEgg = state
+                                                                                task.spawn(function()
+                                                                                    while wait() do
+                                                                                        if not _G.autoEgg then break end;
+                                                                                       
+                                                                                         local args = {
+                                                                                         [1] = "Star22",
+                                                                                            [2] = 1,
+                                                                                            [3] = {}}
+                                                                                
+                                                                                            game:GetService("ReplicatedStorage").Knit.Services.StarEggService.RF.OpenEggs:InvokeServer(unpack(args))
+                                                                                        end
+                                                                                    end)
+                                                                                end)
+                                                                
+                                                            
+local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("Settings")
+
+
+Section:NewKeybind("Toggle the GUI", "Press P to toggle the GUI", Enum.KeyCode.P, function()
+	Library:ToggleUI()
+end)
